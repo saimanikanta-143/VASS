@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Hub</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .navbar button {
+            background: none;
+            border: none;
+            margin: 0 10px;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar button:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .games-box, .info-box {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .games-box:hover, .info-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .games-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button><b><a href="#home">Home</a></b></button>
+        <button><b><a href="#outdoor">Outdoor Games</a></b></button>
+        <button><b><a href="#indoor">Indoor Games</a></b></button>
+        <button><b><a href="#about">About</a></b></button>
+    </div>
+
+    <h1 id="home">🏆 Welcome to Sports Hub</h1>
+
+    <section id="outdoor" class="games-box">
+        <h2>🌳 Outdoor Games</h2>
+        <div class="games-container">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930_1280.png" alt="Football">
+                <h2>Football</h2>
+                <p>Explore the world of Football.</p>
+                <a href="football.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://static.toiimg.com/thumb/msid-70661134,width-1070,height-580,imgsize-761205,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Basketball">
+                <h2>Basketball</h2>
+                <p>Discover Basketball rules & history.</p>
+                <a href="basketball.html" class="button">Explore</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/16566965/pexels-photo-16566965/free-photo-of-rugby-ball-on-grass-pitch.jpeg" alt="rugby">
+                    <h2>Rugby</h2>
+                    <p>Discover Rugby rules & history.</p>
+                    <a href="rugby.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/507493115/photo/volleyball.jpg?s=612x612&w=0&k=20&c=liFTJehXf-hOGJMacHulMvMTXB02gTimN7nBvFYsdrU=" alt="volleyball">
+                <h2>Volleyball</h2>
+                <p>Discover Volleyball rules & history.</p>
+                <a href="volleyball.html" class="button">Explore</a>
+        </div>
+            <div class="card">
+                <img src=" https://img.freepik.com/premium-photo/tennis-racket-balls-tennis-net_23-2148320629.jpg" alt="Tennis ">
+
+                <h2>Tennis</h2>
+                <p>Get insights into Tennis.</p>
+                <a href="tennis.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://www.shutterstock.com/image-photo/cricket-bat-stumps-place-on-600nw-2482026873.jpg" alt="Cricket">
+                <h2>Cricket</h2>
+                <p>Learn more about Cricket.</p>
+                <a href="cricket.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://st.depositphotos.com/62628780/61631/i/450/depositphotos_616311250-stock-photo-baseball-pitcher-man-bat-pitch.jpg" alt="Baseball">
+                <h2>Baseball</h2>
+                <p>Learn more about Baseball.</p>
+                <a href="baseball.html" class="button">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="indoor" class="games-box">
+        <h2>🏠 Indoor Games</h2>
+        <div class="games-container">
+            <div class="card">
+                <img src="https://rukminim3.flixcart.com/image/850/1000/kppt47k0/board/w/v/8/chess-mat-with-chess-coins-19-inch-1-400-vixen-original-imag3w45khhqjfc3.jpeg?q=90&crop=false" alt="Chess">
+                <h2>Chess</h2>
+                <p>Master the game of Chess.</p>
+                <a href="chess.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Ch=1328%2Cq=85%2Cw=1999/wp-content/uploads/world-table-tennis-day1.jpg" alt="Table Tennis">
+                <h2>Table Tennis</h2>
+                <p>Learn the techniques of Table Tennis.</p>
+                <a href="tabletennis.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/badminton-14280461280-1721457562607-compressed.jpg" alt="Badminton">
+                <h2>Badminton</h2>
+                <p>Explore the Badminton world.</p>
+                <a href="badminton.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://ludoking.com/assets/images/ludoking-img.webp" alt="Ludo">
+                <h2>Ludo</h2>
+                <p>Explore the Ludo world.</p>
+                <a href="ludo.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6R46MqEMw2PRQTwaYeI96GrKN7-I_g8SXLA&s" alt="Bowling">
+                <h2>Bowling</h2>
+                <p>Explore the Bowling world.</p>
+                <a href="bowling.html" class="button">Explore</a>
+            </div>
+            
+            <div class="card">
+                <img src="https://rukminim3.flixcart.com/image/850/1000/l4oi4cw0/board-game/i/q/q/3-snake-ladder-game-big-size-mat-4-x-4-ft-4-inches-dice-anti-original-imagfgr5fqzkh9gc.jpeg?q=90&crop=false" alt="Snake And Ladders">
+                <h2>Snake And Ladders</h2>
+                <p>Explore the Snake And Ladders world.</p>
+                <a href="snake.html" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="https://assets.sportsboom.com/IMG_9385_cb671ea36b.JPG" alt="Snooker ">
+                <h2>Snooker </h2>
+                <p>Explore the Snooker  world.</p>
+                <a href="snooker.html" class="button">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="info-box">
+        <h2>About Us</h2>
+        <p>Welcome to Sports Hub, your ultimate destination to learn about various sports, their rules, and history.</p>
+    </section>
+</body>
+</html>
